@@ -54,6 +54,7 @@ func main() {
 		cmd.CmdServe,
 		make.CmdMake,
 		cmd.CmdTestCmd,
+		cmd.CmdPlay,
 	)
 	cmd.RegisterDefaultCmd(rootCmd, cmd.CmdServe)
 
