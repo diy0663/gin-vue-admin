@@ -52,8 +52,8 @@ func RegisterTables() {
 		example.ExaCustomer{},
 		example.ExaFileChunk{},
 		example.ExaFileUploadAndDownload{},
-		// todo 自动迁移表结构
-		pkgTest.InnerDemo{},
+
+		pkgTest.InnerDemo{}, pkgTest.Links{}, pkgTest.Categories{},
 	)
 	if err != nil {
 		global.GVA_LOG.Error("register table failed", zap.Error(err))
