@@ -12,6 +12,7 @@ import (
 	"github.com/flipped-aurora/gin-vue-admin/server/core"
 	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/flipped-aurora/gin-vue-admin/server/initialize"
+	"github.com/flipped-aurora/gin-vue-admin/server/service/system"
 
 	"github.com/spf13/cobra"
 )
@@ -34,6 +35,15 @@ func init() {
 	global.GVA_LOG = core.Zap() // 初始化zap日志库
 	zap.ReplaceGlobals(global.GVA_LOG)
 	global.GVA_DB = initialize.Gorm() // gorm连接数据库
+	initialize.RegisterTables()
+	if global.GVA_CONFIG.System.UseMultipoint || global.GVA_CONFIG.System.UseRedis {
+		// 初始化redis服务
+		initialize.Redis()
+	}
+	// 从db加载jwt数据
+	if global.GVA_DB != nil {
+		system.LoadAll()
+	}
 	initialize.Timer()
 	initialize.DBList()
 }

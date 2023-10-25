@@ -1,7 +1,11 @@
 package cmd
 
 import (
+	"context"
+	"fmt"
+
 	"github.com/diy0663/gohub/pkg/console"
+	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/spf13/cobra"
 )
 
@@ -20,4 +24,11 @@ func runPlay(cmd *cobra.Command, args []string) {
 
 	console.Warning("在runPlay 这里里面写你要测试验证的代码 ")
 	// todo 在这里写代码
+	pingResult, err := global.GVA_REDIS.Ping(context.Background()).Result()
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(pingResult)
+	}
+
 }

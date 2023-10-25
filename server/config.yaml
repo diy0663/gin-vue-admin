@@ -1,227 +1,227 @@
 aliyun-oss:
-    endpoint: yourEndpoint
-    access-key-id: yourAccessKeyId
-    access-key-secret: yourAccessKeySecret
-    bucket-name: yourBucketName
-    bucket-url: yourBucketUrl
-    base-path: yourBasePath
+  endpoint: yourEndpoint
+  access-key-id: yourAccessKeyId
+  access-key-secret: yourAccessKeySecret
+  bucket-name: yourBucketName
+  bucket-url: yourBucketUrl
+  base-path: yourBasePath
 autocode:
-    server-model: /model/%s
-    server-router: /router/%s
-    server: /server
-    server-api: /api/v1/%s
-    server-plug: /plugin/%s
-    server-initialize: /initialize
-    root: /Users/linhaoxin/mygo/src/github.com/diy0663/gin-vue-admin
-    web-table: /view
-    web: /web/src
-    server-service: /service/%s
-    server-request: /model/%s/request/
-    web-api: /api
-    web-form: /view
-    transfer-restart: true
+  server-model: /model/%s
+  server-router: /router/%s
+  server: /server
+  server-api: /api/v1/%s
+  server-plug: /plugin/%s
+  server-initialize: /initialize
+  root: /Users/linhaoxin/mygo/src/github.com/diy0663/gin-vue-admin
+  web-table: /view
+  web: /web/src
+  server-service: /service/%s
+  server-request: /model/%s/request/
+  web-api: /api
+  web-form: /view
+  transfer-restart: true
 aws-s3:
-    bucket: xxxxx-10005608
-    region: ap-shanghai
-    endpoint: ""
-    secret-id: your-secret-id
-    secret-key: your-secret-key
-    base-url: https://gin.vue.admin
-    path-prefix: github.com/flipped-aurora/gin-vue-admin/server
-    s3-force-path-style: false
-    disable-ssl: false
+  bucket: xxxxx-10005608
+  region: ap-shanghai
+  endpoint: ""
+  secret-id: your-secret-id
+  secret-key: your-secret-key
+  base-url: https://gin.vue.admin
+  path-prefix: github.com/flipped-aurora/gin-vue-admin/server
+  s3-force-path-style: false
+  disable-ssl: false
 captcha:
-    key-long: 6
-    img-width: 240
-    img-height: 80
-    open-captcha: 0
-    open-captcha-timeout: 3600
+  key-long: 6
+  img-width: 240
+  img-height: 80
+  open-captcha: 0
+  open-captcha-timeout: 3600
 cors:
-    mode: strict-whitelist
-    whitelist:
-        - allow-origin: example1.com
-          allow-methods: POST, GET
-          allow-headers: Content-Type,AccessToken,X-CSRF-Token, Authorization, Token,X-Token,X-User-Id
-          expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
-          allow-credentials: true
-        - allow-origin: example2.com
-          allow-methods: GET, POST
-          allow-headers: content-type
-          expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
-          allow-credentials: true
+  mode: strict-whitelist
+  whitelist:
+    - allow-origin: example1.com
+      allow-methods: POST, GET
+      allow-headers: Content-Type,AccessToken,X-CSRF-Token, Authorization, Token,X-Token,X-User-Id
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
+      allow-credentials: true
+    - allow-origin: example2.com
+      allow-methods: GET, POST
+      allow-headers: content-type
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
+      allow-credentials: true
 db-list:
-    - type: ""
-      alias-name: ""
-      prefix: ""
-      port: ""
-      config: ""
-      db-name: ""
-      username: ""
-      password: ""
-      path: ""
-      engine: ""
-      log-mode: ""
-      max-idle-conns: 10
-      max-open-conns: 100
-      singular: false
-      log-zap: false
-      disable: true
+  - type: ""
+    alias-name: ""
+    prefix: ""
+    port: ""
+    config: ""
+    db-name: ""
+    username: ""
+    password: ""
+    path: ""
+    engine: ""
+    log-mode: ""
+    max-idle-conns: 10
+    max-open-conns: 100
+    singular: false
+    log-zap: false
+    disable: true
 email:
-    to: xxx@qq.com
-    from: xxx@163.com
-    host: smtp.163.com
-    secret: xxx
-    nickname: test
-    port: 465
-    is-ssl: true
+  to: xxx@qq.com
+  from: xxx@163.com
+  host: smtp.163.com
+  secret: xxx
+  nickname: test
+  port: 465
+  is-ssl: true
 excel:
-    dir: ./resource/excel/
+  dir: ./resource/excel/
 hua-wei-obs:
-    path: you-path
-    bucket: you-bucket
-    endpoint: you-endpoint
-    access-key: you-access-key
-    secret-key: you-secret-key
+  path: you-path
+  bucket: you-bucket
+  endpoint: you-endpoint
+  access-key: you-access-key
+  secret-key: you-secret-key
 jwt:
-    signing-key: ccf0b11c-7cf3-421c-9989-d43ba0eb3a56
-    expires-time: 7d
-    buffer-time: 1d
-    issuer: qmPlus
+  signing-key: ccf0b11c-7cf3-421c-9989-d43ba0eb3a56
+  expires-time: 7d
+  buffer-time: 1d
+  issuer: qmPlus
 local:
-    path: uploads/file
-    store-path: uploads/file
+  path: uploads/file
+  store-path: uploads/file
 mongo:
-    coll: ""
-    options: ""
-    database: ""
-    username: ""
-    password: ""
-    min-pool-size: 0
-    max-pool-size: 100
-    socket-timeout-ms: 0
-    connect-timeout-ms: 0
-    is-zap: false
-    hosts:
-        - host: ""
-          port: ""
+  coll: ""
+  options: ""
+  database: ""
+  username: ""
+  password: ""
+  min-pool-size: 0
+  max-pool-size: 100
+  socket-timeout-ms: 0
+  connect-timeout-ms: 0
+  is-zap: false
+  hosts:
+    - host: ""
+      port: ""
 mssql:
-    prefix: ""
-    port: ""
-    config: ""
-    db-name: ""
-    username: ""
-    password: ""
-    path: ""
-    engine: ""
-    log-mode: ""
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+  prefix: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  path: ""
+  engine: ""
+  log-mode: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: false
 mysql:
-    prefix: ""
-    port: "33066"
-    config: charset=utf8mb4&parseTime=True&loc=Local
-    db-name: gva
-    username: root
-    password: "123456"
-    path: 127.0.0.1
-    engine: ""
-    log-mode: error
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+  prefix: ""
+  port: "33066"
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db-name: gva
+  username: root
+  password: "123456"
+  path: 127.0.0.1
+  engine: ""
+  log-mode: error
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: false
 oracle:
-    prefix: ""
-    port: ""
-    config: ""
-    db-name: ""
-    username: ""
-    password: ""
-    path: ""
-    engine: ""
-    log-mode: ""
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+  prefix: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  path: ""
+  engine: ""
+  log-mode: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: false
 pgsql:
-    prefix: ""
-    port: ""
-    config: ""
-    db-name: ""
-    username: ""
-    password: ""
-    path: ""
-    engine: ""
-    log-mode: ""
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+  prefix: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  path: ""
+  engine: ""
+  log-mode: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: false
 qiniu:
-    zone: ZoneHuaDong
-    bucket: ""
-    img-path: ""
-    access-key: ""
-    secret-key: ""
-    use-https: false
-    use-cdn-domains: false
+  zone: ZoneHuaDong
+  bucket: ""
+  img-path: ""
+  access-key: ""
+  secret-key: ""
+  use-https: false
+  use-cdn-domains: false
 redis:
-    addr: 127.0.0.1:63799
-    password: ""
-    db: 0
+  addr: 127.0.0.1:63799
+  password: ""
+  db: 0
 sqlite:
-    prefix: ""
-    port: ""
-    config: ""
-    db-name: ""
-    username: ""
-    password: ""
-    path: ""
-    engine: ""
-    log-mode: ""
-    max-idle-conns: 10
-    max-open-conns: 100
-    singular: false
-    log-zap: false
+  prefix: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  path: ""
+  engine: ""
+  log-mode: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: false
 system:
-    env: local
-    db-type: mysql
-    oss-type: local
-    router-prefix: ""
-    addr: 8888
-    iplimit-count: 15000
-    iplimit-time: 3600
-    use-multipoint: false
-    use-redis: false
-    use-mongo: false
+  env: local
+  db-type: mysql
+  oss-type: local
+  router-prefix: ""
+  addr: 8888
+  iplimit-count: 15000
+  iplimit-time: 3600
+  use-multipoint: false
+  use-redis: true
+  use-mongo: false
 tencent-cos:
-    bucket: xxxxx-10005608
-    region: ap-shanghai
-    secret-id: your-secret-id
-    secret-key: your-secret-key
-    base-url: https://gin.vue.admin
-    path-prefix: github.com/flipped-aurora/gin-vue-admin/server
+  bucket: xxxxx-10005608
+  region: ap-shanghai
+  secret-id: your-secret-id
+  secret-key: your-secret-key
+  base-url: https://gin.vue.admin
+  path-prefix: github.com/flipped-aurora/gin-vue-admin/server
 timer:
-    spec: '@daily'
-    detail:
-        - tableName: sys_operation_records
-          compareField: created_at
-          interval: 2160h
-        - tableName: jwt_blacklists
-          compareField: created_at
-          interval: 168h
-    start: true
-    with_seconds: false
+  spec: "@daily"
+  detail:
+    - tableName: sys_operation_records
+      compareField: created_at
+      interval: 2160h
+    - tableName: jwt_blacklists
+      compareField: created_at
+      interval: 168h
+  start: true
+  with_seconds: false
 zap:
-    level: info
-    prefix: '[github.com/flipped-aurora/gin-vue-admin/server]'
-    format: console
-    director: log
-    encode-level: LowercaseColorLevelEncoder
-    stacktrace-key: stacktrace
-    max-age: 0
-    show-line: true
-    log-in-console: true
+  level: info
+  prefix: "[github.com/flipped-aurora/gin-vue-admin/server]"
+  format: console
+  director: log
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  max-age: 0
+  show-line: true
+  log-in-console: true
